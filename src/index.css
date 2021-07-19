@@ -5,6 +5,7 @@
   margin: 0;
   font-family: "Quicksand";
   color: #333;
+  background-color: #b9b5be;
 }
 .navbar {
   padding: 20px;
@@ -14,14 +15,14 @@
   margin: 0 auto;
   
   border-bottom: 2px solid black;
-  border-top: 2px double #f1356d;
+  border-top: 2px double #542E71;
   border-bottom-right-radius: 5%;
   border-bottom-left-radius: 5%;
   border-top-left-radius: 3%;
   border-top-right-radius: 3%;
 }
 .navbar h1 {
-  color: #f1356d;
+  color: #542E71;
 }
 .navbar .links {
   margin-left: auto;
@@ -32,10 +33,25 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color:white;
 }
 .content {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
+}
+
+/* blog previews / list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: #542E71;
+  margin-bottom: 8px;
 }
