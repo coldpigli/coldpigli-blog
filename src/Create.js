@@ -7,10 +7,14 @@ const Create = () => {
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('Coldpigli');
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    };
+
     return (
         <div className = 'create'>
             <h2>Create a New Blog!</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>Blog Title:</label>
                 <input
                     type = "text"
