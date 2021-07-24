@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const Create = () => {
 
@@ -7,6 +8,8 @@ const Create = () => {
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('Coldpigli');
     const [isPending, setIsPending] = useState(false);
+    const history = useHistory();
+
 
     const handleSubmit = (e) => {
         e.preventDefault(); 
@@ -21,6 +24,7 @@ const Create = () => {
         }).then(()=>{
             console.log("new blog added");
             setIsPending(false);
+            history.push('/');
         })
     };
 
@@ -52,7 +56,7 @@ const Create = () => {
                     <option value = "Naugu">Naugu</option>
                 </select>
                 {!isPending && <button>Add Blog</button>}
-                {isPending && <button disabled>Adding Blog</button>}
+                {isPending && <button disabled>Adding Blog..</button>}
             </form>
         </div>
      );
