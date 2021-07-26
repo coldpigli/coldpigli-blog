@@ -1,6 +1,6 @@
 {
   "name": "coldpigli-blog",
-  "homepage": "https://coldpigli.github.io/coldpigli-blog/index.js",
+  "homepage": "https://coldpigli.github.io/coldpigli-blog",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
