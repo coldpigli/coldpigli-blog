@@ -14,10 +14,12 @@ The site uses data from a json file which is run via a Json server to mock API r
 Use the following commands to run a Json Server locally 
 
 ### `npm install -g json-server`
-### `json-server --watch db.json --port 8000`
+### `json-server --watch data/db.json --port 8000`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The mock json file is kept within the data folder in my project.
+Please change path/port accordingly.
+
+The project currently allows only three authors to add a new blogpost. This was done just to get a hands-on experience with selection lists.
 
 
 
